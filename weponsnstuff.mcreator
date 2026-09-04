@@ -90,6 +90,60 @@
           "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_boots.json"
         ]
       }
+    },
+    {
+      "name": "RagahelmetChestplateTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_chestplate_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetChestplateTickEventProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RagahelmetLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetLeggingsTickEventProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RagahelmetBootsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetBootsTickEventProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
