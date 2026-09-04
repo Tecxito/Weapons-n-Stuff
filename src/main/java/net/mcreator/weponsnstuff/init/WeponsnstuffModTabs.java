@@ -14,7 +14,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.weponsnstuff.WeponsnstuffMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class WeponsnstuffModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WeponsnstuffMod.MODID);
 
@@ -22,6 +22,10 @@ public class WeponsnstuffModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(WeponsnstuffModItems.MACEOKNIGHTFALL.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_HELMET.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_CHESTPLATE.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_LEGGINGS.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_BOOTS.get());
 		}
 	}
 }

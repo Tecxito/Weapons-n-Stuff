@@ -30,8 +30,8 @@
       "registry_name": "maceoknightfall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/weponsnstuff/models/item/maceoknightfall.json",
-          "src/main/java/net/mcreator/weponsnstuff/item/MaceoknightfallItem.java"
+          "src/main/java/net/mcreator/weponsnstuff/item/MaceoknightfallItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/maceoknightfall.json"
         ]
       }
     },
@@ -56,6 +56,22 @@
           "src/main/java/net/mcreator/weponsnstuff/procedures/MaceoknightfallLivingEntityIsHitWithToolProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Ragahelmet",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_leggings.json",
+          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_helmet.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/RagahelmetItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_chestplate.json",
+          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_boots.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -64,22 +80,37 @@
     "ITEMS:minecraft:axes": [
       "~CUSTOM:Maceoknightfall"
     ],
-    "ITEMS:weponsnstuff:maceoknightfall_repair_items": []
+    "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Ragahelmet.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Ragahelmet.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Ragahelmet.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Ragahelmet.boots"
+    ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.weponsnstuff.maceoknightfall": "Mace \u0027o\u0027 knightfall"
+      "item.weponsnstuff.maceoknightfall": "Mace \u0027o\u0027 knightfall",
+      "item.weponsnstuff.ragahelmet_leggings": "Ragalegs",
+      "item.weponsnstuff.ragahelmet_chestplate": "Ragabody",
+      "item.weponsnstuff.ragahelmet_boots": "Ragafeet",
+      "item.weponsnstuff.ragahelmet_helmet": "Ragahead"
     }
   },
   "metadata": {
     "files": [
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/mixin.weponsnstuff.json",
-      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java",
-      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java"
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -102,5 +133,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.weponsnstuff"
   },
-  "mcreatorVersion": 202500228610
+  "mcreatorVersion": 202500345720
 }

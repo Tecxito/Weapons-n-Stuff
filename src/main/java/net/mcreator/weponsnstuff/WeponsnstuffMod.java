@@ -38,11 +38,8 @@ public class WeponsnstuffMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
 		WeponsnstuffModItems.REGISTRY.register(modEventBus);
-
 		WeponsnstuffModTabs.REGISTRY.register(modEventBus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
