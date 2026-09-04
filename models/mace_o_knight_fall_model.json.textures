@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "mace_o_knight_fall_texture"
+      },
+      "name": "default"
+    }
+  }
+}
