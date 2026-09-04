@@ -22,6 +22,10 @@ public class WeponsnstuffModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(WeponsnstuffModItems.MACEOKNIGHTFALL.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_HELMET.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_CHESTPLATE.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_LEGGINGS.get());
+			tabData.accept(WeponsnstuffModItems.RAGAHELMET_BOOTS.get());
 		}
 	}
 }
