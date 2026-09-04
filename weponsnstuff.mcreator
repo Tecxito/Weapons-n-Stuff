@@ -48,22 +48,6 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -124,6 +108,60 @@
           "src/main/java/net/mcreator/weponsnstuff/procedures/PlayerFallingProcedure.java"
         ]
       }
+    },
+    {
+      "name": "RagahelmetBootsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetBootsTickEventProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RagahelmetChestplateTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_chestplate_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetChestplateTickEventProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RagahelmetLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetLeggingsTickEventProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -139,6 +177,7 @@
     "ITEMS:minecraft:axes": [
       "~CUSTOM:Maceoknightfall"
     ],
+    "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:Ragahelmet.helmet"
     ],
@@ -167,7 +206,6 @@
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
@@ -192,5 +230,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.weponsnstuff"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202500228610
 }

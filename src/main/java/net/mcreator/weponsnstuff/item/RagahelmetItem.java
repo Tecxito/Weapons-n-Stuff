@@ -20,7 +20,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 import net.minecraft.Util;
 
+import net.mcreator.weponsnstuff.procedures.RagahelmetLeggingsTickEventProcedure;
 import net.mcreator.weponsnstuff.procedures.RagahelmetHelmetTickEventProcedure;
+import net.mcreator.weponsnstuff.procedures.RagahelmetChestplateTickEventProcedure;
+import net.mcreator.weponsnstuff.procedures.RagahelmetBootsTickEventProcedure;
 
 import java.util.List;
 import java.util.EnumMap;
@@ -69,17 +72,41 @@ public abstract class RagahelmetItem extends ArmorItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15)));
 		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				RagahelmetChestplateTickEventProcedure.execute(entity);
+			}
+		}
 	}
 
 	public static class Leggings extends RagahelmetItem {
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15)));
 		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				RagahelmetLeggingsTickEventProcedure.execute(entity);
+			}
+		}
 	}
 
 	public static class Boots extends RagahelmetItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)));
+		}
+
+		@Override
+		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+			super.inventoryTick(itemstack, world, entity, slot, selected);
+			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
+				RagahelmetBootsTickEventProcedure.execute(entity);
+			}
 		}
 	}
 }

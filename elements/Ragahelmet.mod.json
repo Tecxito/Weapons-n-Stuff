@@ -13,6 +13,15 @@
     "onHelmetTick": {
       "name": "RagahelmetHelmetTickEvent"
     },
+    "onBodyTick": {
+      "name": "RagahelmetChestplateTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "RagahelmetLeggingsTickEvent"
+    },
+    "onBootsTick": {
+      "name": "RagahelmetBootsTickEvent"
+    },
     "creativeTabs": [
       {
         "value": "COMBAT"
