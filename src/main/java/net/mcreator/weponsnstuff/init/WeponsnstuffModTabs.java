@@ -14,7 +14,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.weponsnstuff.WeponsnstuffMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class WeponsnstuffModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WeponsnstuffMod.MODID);
 

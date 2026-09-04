@@ -13,7 +13,10 @@ import net.mcreator.weponsnstuff.WeponsnstuffMod;
 
 public class WeponsnstuffModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(WeponsnstuffMod.MODID);
-	public static final DeferredItem<Item> MACEOKNIGHTFALL = REGISTRY.register("maceoknightfall", MaceoknightfallItem::new);
+	public static final DeferredItem<Item> MACEOKNIGHTFALL;
+	static {
+		MACEOKNIGHTFALL = REGISTRY.register("maceoknightfall", MaceoknightfallItem::new);
+	}
 	// Start of user code block custom items
 	// End of user code block custom items
 }
