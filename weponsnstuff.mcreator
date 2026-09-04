@@ -72,6 +72,24 @@
           "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_boots.json"
         ]
       }
+    },
+    {
+      "name": "RagahelmetHelmetTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetHelmetTickEventProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
