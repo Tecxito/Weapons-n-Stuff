@@ -10,6 +10,9 @@
     "textureLeggings": "ragatest_leggings",
     "enableBoots": true,
     "textureBoots": "ragatest_boots",
+    "onHelmetTick": {
+      "name": "RagahelmetHelmetTickEvent"
+    },
     "creativeTabs": [
       {
         "value": "COMBAT"
