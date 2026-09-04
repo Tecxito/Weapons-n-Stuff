@@ -1,6 +1,9 @@
 package net.mcreator.weponsnstuff.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 public class RagahelmetHelmetTickEventProcedure {
 	public static void execute(Entity entity) {

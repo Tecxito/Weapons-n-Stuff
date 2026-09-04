@@ -1,11 +1,27 @@
 package net.mcreator.weponsnstuff.item;
 
-import java.util.function.Consumer;
-import net.minecraft.client.model.Model;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
+
+import java.util.List;
+import java.util.EnumMap;
 
 @EventBusSubscriber
 public abstract class RagahelmetItem extends ArmorItem {
-
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
 	@SubscribeEvent
@@ -29,35 +45,26 @@ public abstract class RagahelmetItem extends ArmorItem {
 	}
 
 	public static class Helmet extends RagahelmetItem {
-
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)));
 		}
-
 	}
 
 	public static class Chestplate extends RagahelmetItem {
-
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(15)));
 		}
-
 	}
 
 	public static class Leggings extends RagahelmetItem {
-
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(15)));
 		}
-
 	}
 
 	public static class Boots extends RagahelmetItem {
-
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(15)));
 		}
-
 	}
-
 }
