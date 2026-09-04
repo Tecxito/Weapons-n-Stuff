@@ -12,7 +12,7 @@ public class MaceoknightfallEntitySwingsItemProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = EntityType.BREEZE_WIND_CHARGE.spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 1.5, entity.getZ()), MobSpawnType.MOB_SUMMONED);
+			Entity entityToSpawn = EntityType.BREEZE_WIND_CHARGE.spawn(_level, BlockPos.containing(entity.getX(), entity.getY() + 2, entity.getZ()), MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 				entityToSpawn.setDeltaMovement((1.5 * (-1) * Math.sin(Math.toRadians(entity.getYRot())) * Math.cos(Math.toRadians(entity.getXRot()))), (1.5 * (-1) * Math.sin(Math.toRadians(entity.getXRot()))),
 						(1.5 * Math.cos(Math.toRadians(entity.getYRot())) * Math.cos(Math.toRadians(entity.getXRot()))));

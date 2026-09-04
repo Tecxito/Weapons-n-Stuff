@@ -48,6 +48,22 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -90,15 +106,39 @@
           "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_boots.json"
         ]
       }
+    },
+    {
+      "name": "PlayerFalling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_falling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/PlayerFallingProcedure.java"
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "falling_ticks",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:axes": [
       "~CUSTOM:Maceoknightfall"
     ],
-    "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:Ragahelmet.helmet"
     ],
@@ -127,6 +167,7 @@
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
@@ -151,5 +192,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.weponsnstuff"
   },
-  "mcreatorVersion": 202500228610
+  "mcreatorVersion": 202500345720
 }

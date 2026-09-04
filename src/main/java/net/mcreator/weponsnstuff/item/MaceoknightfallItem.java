@@ -57,7 +57,7 @@ public class MaceoknightfallItem extends AxeItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		MaceoknightfallLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity);
+		MaceoknightfallLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
 		return retval;
 	}
 

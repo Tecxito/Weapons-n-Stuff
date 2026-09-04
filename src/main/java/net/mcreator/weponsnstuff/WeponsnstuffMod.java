@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.weponsnstuff.network.WeponsnstuffModVariables;
 import net.mcreator.weponsnstuff.init.WeponsnstuffModTabs;
 import net.mcreator.weponsnstuff.init.WeponsnstuffModItems;
 
@@ -40,6 +41,7 @@ public class WeponsnstuffMod {
 		modEventBus.addListener(this::registerNetworking);
 		WeponsnstuffModItems.REGISTRY.register(modEventBus);
 		WeponsnstuffModTabs.REGISTRY.register(modEventBus);
+		WeponsnstuffModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

@@ -8,7 +8,7 @@
     "texture": "mace_o_knight_fall_display",
     "customModelName": "mace_o_knight_fall_model:default",
     "blockingModelName": "Normal blocking",
-    "guiTexture": "mace_o_knight_fall_display",
+    "guiTexture": "",
     "name": "Mace 'o' knightfall",
     "specialInformation": {
       "fixedValue": []
