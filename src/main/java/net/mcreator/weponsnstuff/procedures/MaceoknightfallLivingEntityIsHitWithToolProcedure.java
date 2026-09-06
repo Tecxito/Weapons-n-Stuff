@@ -1,6 +1,5 @@
 package net.mcreator.weponsnstuff.procedures;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -21,7 +20,7 @@ public class MaceoknightfallLivingEntityIsHitWithToolProcedure {
 			return;
 		sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) (entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks * 0.5));
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 50, 3, 3, 3, 2);
+			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 50, 3, 3, 3, 1.3);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.mace.smash_ground")), SoundSource.PLAYERS, 1, 1);
@@ -29,7 +28,7 @@ public class MaceoknightfallLivingEntityIsHitWithToolProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.mace.smash_ground")), SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		sourceentity.push(0, 0, 5);
-		entity.setDeltaMovement(new Vec3(0, 0, 3));
+		sourceentity.push(0, 1, 0);
+		entity.push(0, 1, 0);
 	}
 }
