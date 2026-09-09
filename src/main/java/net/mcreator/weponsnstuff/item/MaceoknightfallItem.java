@@ -9,11 +9,13 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
+import net.mcreator.weponsnstuff.procedures.PlayerFallingProcedure;
 import net.mcreator.weponsnstuff.procedures.MaceoknightfallLivingEntityIsHitWithToolProcedure;
 import net.mcreator.weponsnstuff.procedures.MaceoknightfallEntitySwingsItemProcedure;
 
@@ -66,6 +68,12 @@ public class MaceoknightfallItem extends AxeItem {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		MaceoknightfallEntitySwingsItemProcedure.execute(world, entity);
 		return ar;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		PlayerFallingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 
 	@Override

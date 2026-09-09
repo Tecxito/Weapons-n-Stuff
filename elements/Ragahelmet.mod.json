@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,22 +10,12 @@
     "textureLeggings": "ragatest_leggings",
     "enableBoots": true,
     "textureBoots": "ragatest_boots",
-    "onHelmetTick": {
-      "name": "RagahelmetHelmetTickEvent"
-    },
-    "onBodyTick": {
-      "name": "RagahelmetChestplateTickEvent"
-    },
-    "onLeggingsTick": {
-      "name": "RagahelmetLeggingsTickEvent"
-    },
-    "onBootsTick": {
-      "name": "RagahelmetBootsTickEvent"
-    },
+    "onHelmetTick": "RagahelmetHelmetTickEvent",
+    "onBodyTick": "RagahelmetChestplateTickEvent",
+    "onLeggingsTick": "RagahelmetLeggingsTickEvent",
+    "onBootsTick": "RagahelmetBootsTickEvent",
     "creativeTabs": [
-      {
-        "value": "COMBAT"
-      }
+      "COMBAT"
     ],
     "armorTextureFile": "ragatest",
     "helmetName": "Ragahead",
@@ -68,6 +58,10 @@
     "leggingsItemCustomModelName": "Normal",
     "bootsItemRenderType": 0,
     "bootsItemCustomModelName": "Normal",
+    "helmetTranslucency": false,
+    "bodyTranslucency": false,
+    "leggingsTranslucency": false,
+    "bootsTranslucency": false,
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
@@ -104,13 +98,11 @@
     "enchantability": 20,
     "toughness": 4.0,
     "knockbackResistance": 0.2,
-    "equipSound": {
-      "value": "item.armor.equip_netherite"
-    },
+    "equipSound": "item.armor.equip_netherite",
     "repairItems": [
-      {
-        "value": "Blocks.CONCRETE#0"
-      }
-    ]
+      "Blocks.CONCRETE#0"
+    ],
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

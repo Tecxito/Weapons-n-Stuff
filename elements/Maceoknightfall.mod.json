@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -10,13 +10,12 @@
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
     "name": "Mace 'o' knightfall",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "COMBAT"
-      }
+      "COMBAT"
     ],
     "efficiency": 6.0,
     "attackSpeed": 1.0,
@@ -27,20 +26,16 @@
       "fixedValue": true
     },
     "repairItems": [
-      {
-        "value": "Items.BREEZE_ROD"
-      }
+      "Items.BREEZE_ROD"
     ],
     "immuneToFire": true,
     "blockDropsTier": "STONE",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "MaceoknightfallEntitySwingsItem"
-    },
-    "onEntityHitWith": {
-      "name": "MaceoknightfallLivingEntityIsHitWithTool"
-    }
+    "onRightClickedInAir": "MaceoknightfallEntitySwingsItem",
+    "onEntityHitWith": "MaceoknightfallLivingEntityIsHitWithTool",
+    "onItemInInventoryTick": "PlayerFalling"
   }
 }

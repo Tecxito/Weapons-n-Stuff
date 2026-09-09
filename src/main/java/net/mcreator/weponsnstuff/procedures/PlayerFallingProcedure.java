@@ -1,48 +1,28 @@
 package net.mcreator.weponsnstuff.procedures;
 
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.scores.criteria.ObjectiveCriteria;
-import net.minecraft.world.scores.Scoreboard;
-import net.minecraft.world.scores.ScoreHolder;
-import net.minecraft.world.scores.Objective;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.weponsnstuff.network.WeponsnstuffModVariables;
 
-import javax.annotation.Nullable;
-
-@EventBusSubscriber
 public class PlayerFallingProcedure {
-	@SubscribeEvent
-	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity());
-	}
-
-	public static void execute(Entity entity) {
-		execute(null, entity);
-	}
-
-	private static void execute(@Nullable Event event, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		{
-			Entity _ent = entity;
-			Scoreboard _sc = _ent.level().getScoreboard();
-			Objective _so = _sc.getObjective("fall_count");
-			if (_so == null)
-				_so = _sc.addObjective("fall_count", ObjectiveCriteria.DUMMY, Component.literal("fall_count"), ObjectiveCriteria.RenderType.INTEGER, true, null);
-			_sc.getOrCreatePlayerScore(ScoreHolder.forNameOnly(_ent.getScoreboardName()), _so).set((int) entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks);
-		}
-		if (0 > entity.getDeltaMovement().y()) {
-			{
-				WeponsnstuffModVariables.PlayerVariables _vars = entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES);
-				_vars.falling_ticks = entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks + 1;
-				_vars.markSyncDirty();
+		if (entity.getDeltaMovement().y() < -0.08 && !(entity.onGround() || entity.isInWaterOrBubble())) {
+			if (entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks < 20) {
+				{
+					WeponsnstuffModVariables.PlayerVariables _vars = entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES);
+					_vars.falling_ticks = entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks + 0.5;
+					_vars.markSyncDirty();
+				}
 			}
 		} else {
 			{
@@ -51,5 +31,9 @@ public class PlayerFallingProcedure {
 				_vars.markSyncDirty();
 			}
 		}
+		itemstack.setDamageValue((int) (entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks * (-50) + 1000));
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					("say Damage:" + entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks * 2));
 	}
 }

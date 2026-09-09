@@ -118,6 +118,26 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -184,27 +204,27 @@
     {
       "name": "falling_ticks",
       "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:Maceoknightfall"
-    ],
     "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
+    "ITEMS:minecraft:axes": [
+      "~Maceoknightfall@CUSTOM:Maceoknightfall"
+    ],
     "ITEMS:minecraft:head_armor": [
-      "~CUSTOM:Ragahelmet.helmet"
+      "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:Ragahelmet.body"
+      "~Ragahelmet@CUSTOM:Ragahelmet.body"
     ],
     "ITEMS:minecraft:leg_armor": [
-      "~CUSTOM:Ragahelmet.legs"
+      "~Ragahelmet@CUSTOM:Ragahelmet.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:Ragahelmet.boots"
+      "~Ragahelmet@CUSTOM:Ragahelmet.boots"
     ]
   },
   "tab_element_order": {},
@@ -247,5 +267,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.weponsnstuff"
   },
-  "mcreatorVersion": 202500345720
+  "mcreatorVersion": 202600233518
 }

@@ -29,7 +29,7 @@ import java.util.function.Supplier;
 @EventBusSubscriber
 public class WeponsnstuffModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, WeponsnstuffMod.MODID);
-	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
+	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(PlayerVariables::new).build());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -66,15 +66,15 @@ public class WeponsnstuffModVariables {
 	public static void clonePlayer(PlayerEvent.Clone event) {
 		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 		PlayerVariables clone = new PlayerVariables();
+		clone.falling_ticks = original.falling_ticks;
 		if (!event.isWasDeath()) {
-			clone.falling_ticks = original.falling_ticks;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		boolean _syncDirty = false;
-		public double falling_ticks = 0;
+		public double falling_ticks = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
