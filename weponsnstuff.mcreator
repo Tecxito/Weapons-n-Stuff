@@ -20,7 +20,8 @@
         "files": [
           "src/main/java/net/mcreator/weponsnstuff/procedures/MaceoknightfallEntitySwingsItemProcedure.java"
         ]
-      }
+      },
+      "path": "~/Mace Components"
     },
     {
       "name": "Maceoknightfall",
@@ -33,7 +34,8 @@
           "src/main/resources/assets/weponsnstuff/models/item/maceoknightfall.json",
           "src/main/java/net/mcreator/weponsnstuff/item/MaceoknightfallItem.java"
         ]
-      }
+      },
+      "path": "~/Mace Components"
     },
     {
       "name": "MaceoknightfallLivingEntityIsHitWithTool",
@@ -71,7 +73,8 @@
         "files": [
           "src/main/java/net/mcreator/weponsnstuff/procedures/MaceoknightfallLivingEntityIsHitWithToolProcedure.java"
         ]
-      }
+      },
+      "path": "~/Mace Components"
     },
     {
       "name": "RagahelmetHelmetTickEvent",
@@ -89,30 +92,89 @@
         "files": [
           "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetHelmetTickEventProcedure.java"
         ]
-      }
+      },
+      "path": "~/Raga_Armor"
     },
     {
       "name": "Ragahelmet",
       "type": "armor",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ragahelmet",
+      "registry_name": "raga_armor",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/weponsnstuff/item/RagahelmetItem.java",
-          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_helmet.json",
-          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_chestplate.json",
-          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_leggings.json",
-          "src/main/resources/assets/weponsnstuff/models/item/ragahelmet_boots.json"
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_helmet.json",
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_chestplate.json",
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_leggings.json",
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_boots.json"
         ]
-      }
+      },
+      "path": "~/Raga_Armor"
     },
     {
-      "name": "PlayerFalling",
+      "name": "RagahelmetBootsTickEvent",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "player_falling",
+      "registry_name": "ragahelmet_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetBootsTickEventProcedure.java"
+        ]
+      },
+      "path": "~/Raga_Armor"
+    },
+    {
+      "name": "RagahelmetChestplateTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_chestplate_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetChestplateTickEventProcedure.java"
+        ]
+      },
+      "path": "~/Raga_Armor"
+    },
+    {
+      "name": "RagahelmetLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ragahelmet_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetLeggingsTickEventProcedure.java"
+        ]
+      },
+      "path": "~/Raga_Armor"
+    },
+    {
+      "name": "SoulEssenceParticulate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_essence_particulate",
       "metadata": {
         "dependencies": [
           {
@@ -141,73 +203,201 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/weponsnstuff/procedures/PlayerFallingProcedure.java"
+          "src/main/java/net/mcreator/weponsnstuff/procedures/SoulEssenceParticulateProcedure.java"
         ]
+      },
+      "path": "~/Soul Essence Structure"
+    },
+    {
+      "name": "SoulEssence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_essence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/SoulEssenceItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/soul_essence.json"
+        ]
+      },
+      "path": "~/Soul Essence Structure"
+    },
+    {
+      "name": "WeponsNStuff",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wepons_n_stuff",
+      "metadata": {
+        "files": []
       }
     },
     {
-      "name": "RagahelmetBootsTickEvent",
-      "type": "procedure",
+      "name": "SoulEssenceDistilled",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ragahelmet_boots_tick_event",
+      "registry_name": "soul_essence_distilled",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetBootsTickEventProcedure.java"
+          "src/main/java/net/mcreator/weponsnstuff/recipe/brewing/SoulEssenceDistilledBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Soul Essence Structure"
     },
     {
-      "name": "RagahelmetChestplateTickEvent",
-      "type": "procedure",
+      "name": "SoulCrystle",
+      "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ragahelmet_chestplate_tick_event",
+      "registry_name": "soul_crystle",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetChestplateTickEventProcedure.java"
+          "src/main/java/net/mcreator/weponsnstuff/item/SoulCrystleItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/soul_crystle.json"
         ]
-      }
+      },
+      "path": "~/Soul Essence Structure"
     },
     {
-      "name": "RagahelmetLeggingsTickEvent",
-      "type": "procedure",
+      "name": "SoulEssenceToSoulCrystle",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ragahelmet_leggings_tick_event",
+      "registry_name": "soul_essence_to_soul_crystle",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
         "files": [
-          "src/main/java/net/mcreator/weponsnstuff/procedures/RagahelmetLeggingsTickEventProcedure.java"
+          "src/main/resources/data/weponsnstuff/recipe/soul_essence_to_soul_crystle.json"
         ]
-      }
+      },
+      "path": "~/Soul Essence Structure"
+    },
+    {
+      "name": "MaceHead",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_head",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/MaceHeadItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/mace_head.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "WeaponHandle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_handle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/weapon_handle.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/WeaponHandleItem.java"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "MaceBlade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/MaceBladeItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/mace_blade.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "MaceBladeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_blade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/mace_blade_recipe.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "MaceBladeRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_blade_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/mace_blade_recipe_2.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "WeaponHandleResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_handle_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/weapon_handle_resipe.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "MaceHeadResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_head_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/mace_head_resipe.json"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "SoulCore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/loot_table/blocks/soul_core.json",
+          "src/main/resources/assets/weponsnstuff/models/item/soul_core.json",
+          "src/main/resources/assets/weponsnstuff/blockstates/soul_core.json",
+          "src/main/resources/assets/weponsnstuff/models/block/soul_core.json",
+          "src/main/java/net/mcreator/weponsnstuff/block/SoulCoreBlock.java"
+        ]
+      },
+      "path": "~/Mace Components"
+    },
+    {
+      "name": "MaceOKnightFallResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mace_o_knight_fall_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/mace_o_knight_fall_resipe.json"
+        ]
+      },
+      "path": "~/Mace Components"
     }
   ],
-  "variable_elements": [
-    {
-      "name": "falling_ticks",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0.0"
-    }
-  ],
+  "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
@@ -231,25 +421,45 @@
   "language_map": {
     "en_us": {
       "item.weponsnstuff.maceoknightfall": "Mace \u0027o\u0027 knightfall",
-      "item.weponsnstuff.ragahelmet_leggings": "Ragalegs",
-      "item.weponsnstuff.ragahelmet_chestplate": "Ragabody",
-      "item.weponsnstuff.ragahelmet_boots": "Ragafeet",
-      "item.weponsnstuff.ragahelmet_helmet": "Ragahead"
+      "item.weponsnstuff.raga_armor_helmet": "Ragahead",
+      "item.weponsnstuff.raga_armor_chestplate": "Ragabody",
+      "item.weponsnstuff.raga_armor_boots": "Ragafeet",
+      "item.weponsnstuff.raga_armor_leggings": "Ragalegs",
+      "item.weponsnstuff.soul_essence": "Soul Essence",
+      "item_group.weponsnstuff.wepons_n_stuff": "Wepons \u0027n\u0027 Stuff",
+      "item.weponsnstuff.soul_crystle": "Soul Crystle",
+      "item.weponsnstuff.mace_head": "Mace Head",
+      "item.weponsnstuff.weapon_handle": "Weapon Handle",
+      "item.weponsnstuff.mace_blade": "Mace Blade",
+      "block.weponsnstuff.soul_core": "Soul Core"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModBlocks.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Mace Components",
+        "children": []
+      },
+      {
+        "name": "Raga_Armor",
+        "children": []
+      },
+      {
+        "name": "Soul Essence Structure",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "weponsnstuff",

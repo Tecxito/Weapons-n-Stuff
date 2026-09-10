@@ -15,7 +15,8 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      "COMBAT"
+      "COMBAT",
+      "CUSTOM:WeponsNStuff"
     ],
     "efficiency": 6.0,
     "attackSpeed": 1.0,
@@ -35,7 +36,6 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": "MaceoknightfallEntitySwingsItem",
-    "onEntityHitWith": "MaceoknightfallLivingEntityIsHitWithTool",
-    "onItemInInventoryTick": "PlayerFalling"
+    "onEntityHitWith": "MaceoknightfallLivingEntityIsHitWithTool"
   }
 }

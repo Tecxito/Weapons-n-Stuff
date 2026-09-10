@@ -17,15 +17,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.weponsnstuff.network.WeponsnstuffModVariables;
-
 public class MaceoknightfallLivingEntityIsHitWithToolProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					("say Damage:" + entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks * 10));
+		double MaceDamage = 0;
+		MaceDamage = 1.5;
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 50, 3, 3, 3, 1.3);
 		if (world instanceof Level _level) {
@@ -35,7 +32,11 @@ public class MaceoknightfallLivingEntityIsHitWithToolProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.mace.smash_ground")), SoundSource.PLAYERS, 1, 1, false);
 			}
 		}
-		sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), (float) (entity.getData(WeponsnstuffModVariables.PLAYER_VARIABLES).falling_ticks * 10));
+		entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), sourceentity), (float) (sourceentity.fallDistance * MaceDamage));
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					("say Damage:" + sourceentity.fallDistance * MaceDamage));
+		sourceentity.fallDistance = 0;
 		entity.push(0, 0.5, 0);
 		sourceentity.push(0, 0.5, 0);
 	}

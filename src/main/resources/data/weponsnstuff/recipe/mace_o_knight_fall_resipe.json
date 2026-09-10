@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "weponsnstuff:mace_blade"
+    },
+    "b": {
+      "item": "weponsnstuff:mace_head"
+    },
+    "c": {
+      "item": "weponsnstuff:weapon_handle"
+    }
+  },
+  "result": {
+    "id": "weponsnstuff:maceoknightfall",
+    "count": 1
+  }
+}

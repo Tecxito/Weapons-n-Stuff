@@ -15,7 +15,8 @@
     "onLeggingsTick": "RagahelmetLeggingsTickEvent",
     "onBootsTick": "RagahelmetBootsTickEvent",
     "creativeTabs": [
-      "COMBAT"
+      "COMBAT",
+      "CUSTOM:WeponsNStuff"
     ],
     "armorTextureFile": "ragatest",
     "helmetName": "Ragahead",

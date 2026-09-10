@@ -1,7 +1,14 @@
 {
   "item.weponsnstuff.maceoknightfall": "Mace 'o' knightfall",
-  "item.weponsnstuff.ragahelmet_leggings": "Ragalegs",
-  "item.weponsnstuff.ragahelmet_chestplate": "Ragabody",
-  "item.weponsnstuff.ragahelmet_boots": "Ragafeet",
-  "item.weponsnstuff.ragahelmet_helmet": "Ragahead"
+  "item.weponsnstuff.raga_armor_helmet": "Ragahead",
+  "item.weponsnstuff.raga_armor_chestplate": "Ragabody",
+  "item.weponsnstuff.raga_armor_boots": "Ragafeet",
+  "item.weponsnstuff.raga_armor_leggings": "Ragalegs",
+  "item.weponsnstuff.soul_essence": "Soul Essence",
+  "item_group.weponsnstuff.wepons_n_stuff": "Wepons 'n' Stuff",
+  "item.weponsnstuff.soul_crystle": "Soul Crystle",
+  "item.weponsnstuff.mace_head": "Mace Head",
+  "item.weponsnstuff.weapon_handle": "Weapon Handle",
+  "item.weponsnstuff.mace_blade": "Mace Blade",
+  "block.weponsnstuff.soul_core": "Soul Core"
 }

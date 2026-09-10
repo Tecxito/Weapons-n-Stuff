@@ -45,7 +45,7 @@ public abstract class RagahelmetItem extends ArmorItem {
 				map.put(ArmorItem.Type.BODY, 10);
 			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(Blocks.WHITE_CONCRETE)),
 					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("weponsnstuff:ragatest"))), 4f, 0.2f);
-			registerHelper.register(ResourceLocation.parse("weponsnstuff:ragahelmet"), armorMaterial);
+			registerHelper.register(ResourceLocation.parse("weponsnstuff:raga_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

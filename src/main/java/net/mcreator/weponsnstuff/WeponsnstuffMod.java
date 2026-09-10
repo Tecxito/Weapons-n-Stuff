@@ -18,9 +18,9 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.weponsnstuff.network.WeponsnstuffModVariables;
 import net.mcreator.weponsnstuff.init.WeponsnstuffModTabs;
 import net.mcreator.weponsnstuff.init.WeponsnstuffModItems;
+import net.mcreator.weponsnstuff.init.WeponsnstuffModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -42,9 +42,9 @@ public class WeponsnstuffMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		WeponsnstuffModBlocks.REGISTRY.register(modEventBus);
 		WeponsnstuffModItems.REGISTRY.register(modEventBus);
 		WeponsnstuffModTabs.REGISTRY.register(modEventBus);
-		WeponsnstuffModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
