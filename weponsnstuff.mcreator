@@ -13,6 +13,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -401,9 +405,6 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
-    "ITEMS:minecraft:axes": [
-      "~Maceoknightfall@CUSTOM:Maceoknightfall"
-    ],
     "ITEMS:minecraft:head_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
@@ -415,6 +416,9 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.boots"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~Maceoknightfall@CUSTOM:Maceoknightfall"
     ]
   },
   "tab_element_order": {},

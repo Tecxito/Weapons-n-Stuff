@@ -64,7 +64,7 @@ public class MaceoknightfallItem extends AxeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		MaceoknightfallEntitySwingsItemProcedure.execute(world, entity);
+		MaceoknightfallEntitySwingsItemProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 
