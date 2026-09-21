@@ -15,10 +15,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -35,8 +31,8 @@
       "registry_name": "maceoknightfall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/weponsnstuff/models/item/maceoknightfall.json",
-          "src/main/java/net/mcreator/weponsnstuff/item/MaceoknightfallItem.java"
+          "src/main/java/net/mcreator/weponsnstuff/item/MaceoknightfallItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/maceoknightfall.json"
         ]
       },
       "path": "~/Mace Components"
@@ -107,11 +103,11 @@
       "registry_name": "raga_armor",
       "metadata": {
         "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_boots.json",
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_leggings.json",
           "src/main/java/net/mcreator/weponsnstuff/item/RagahelmetItem.java",
           "src/main/resources/assets/weponsnstuff/models/item/raga_armor_helmet.json",
-          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_chestplate.json",
-          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_leggings.json",
-          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_boots.json"
+          "src/main/resources/assets/weponsnstuff/models/item/raga_armor_chestplate.json"
         ]
       },
       "path": "~/Raga_Armor"
@@ -405,6 +401,9 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
+    "ITEMS:minecraft:axes": [
+      "~Maceoknightfall@CUSTOM:Maceoknightfall"
+    ],
     "ITEMS:minecraft:head_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
@@ -416,9 +415,6 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.boots"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~Maceoknightfall@CUSTOM:Maceoknightfall"
     ]
   },
   "tab_element_order": {},
@@ -442,10 +438,10 @@
     "files": [
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModBlocks.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
-      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

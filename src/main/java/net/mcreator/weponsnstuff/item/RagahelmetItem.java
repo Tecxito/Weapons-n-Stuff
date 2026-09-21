@@ -2,17 +2,22 @@ package net.mcreator.weponsnstuff.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.NeoForgeMod;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
@@ -24,6 +29,7 @@ import net.mcreator.weponsnstuff.procedures.RagahelmetLeggingsTickEventProcedure
 import net.mcreator.weponsnstuff.procedures.RagahelmetHelmetTickEventProcedure;
 import net.mcreator.weponsnstuff.procedures.RagahelmetChestplateTickEventProcedure;
 import net.mcreator.weponsnstuff.procedures.RagahelmetBootsTickEventProcedure;
+import net.mcreator.weponsnstuff.WeponsnstuffMod;
 
 import java.util.List;
 import java.util.EnumMap;
@@ -56,7 +62,13 @@ public abstract class RagahelmetItem extends ArmorItem {
 
 	public static class Helmet extends RagahelmetItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15)));
+			super(ArmorItem.Type.HELMET,
+					new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(15))
+							.attributes(ItemAttributeModifiers.builder().add(Attributes.ARMOR, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.helmet"), 10, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
+									.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.helmet"), 4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
+									.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(ResourceLocation.withDefaultNamespace("armor.helmet"), 0.2, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
+									.add(NeoForgeMod.NAMETAG_DISTANCE, new AttributeModifier(ResourceLocation.fromNamespaceAndPath(WeponsnstuffMod.MODID, "raga_armor_0.helmet"), 1000, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
+									.build()));
 		}
 
 		@Override
