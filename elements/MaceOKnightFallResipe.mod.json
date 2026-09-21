@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:MaceBlade",
+      "CUSTOM:MaceHead",
+      "CUSTOM:MaceBlade",
+      "",
+      "CUSTOM:WeaponHandle",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:Maceoknightfall",
+    "name": "mace_o_knight_fall_resipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "",
+      "CUSTOM:SoulEssence",
+      "",
+      "",
+      "Items.NETHER_STAR",
+      "",
+      "",
+      "CUSTOM:SoulEssence",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:SoulCrystle",
+    "name": "soul_essence_to_soul_crystle",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aba",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:breeze_rod"
+    },
+    "c": {
+      "item": "weponsnstuff:soul_crystle"
+    }
+  },
+  "result": {
+    "id": "weponsnstuff:weapon_handle",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lodestone"
+    },
+    "b": {
+      "item": "weponsnstuff:soul_core"
+    }
+  },
+  "result": {
+    "id": "weponsnstuff:mace_head",
+    "count": 1
+  }
+}

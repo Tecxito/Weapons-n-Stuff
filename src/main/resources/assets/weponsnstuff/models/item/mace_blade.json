@@ -1,0 +1,7 @@
+{
+  "parent": "weponsnstuff:custom/mace_blades",
+  "textures": {
+    "1": "weponsnstuff:block/mace_o_knight_fall_texture",
+    "particle": "weponsnstuff:item/mace_blades"
+  }
+}
