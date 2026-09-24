@@ -587,6 +587,9 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:axes": [
+      "~Maceoknightfall@CUSTOM:Maceoknightfall"
+    ],
     "ITEMS:minecraft:head_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
@@ -598,9 +601,6 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.boots"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~Maceoknightfall@CUSTOM:Maceoknightfall"
     ]
   },
   "tab_element_order": {},
@@ -611,7 +611,7 @@
       "item.weponsnstuff.raga_armor_chestplate": "Ragabody",
       "item.weponsnstuff.raga_armor_boots": "Ragafeet",
       "item.weponsnstuff.raga_armor_leggings": "Ragalegs",
-      "item.weponsnstuff.soul_essence": "Soul Essence",
+      "item.weponsnstuff.soul_essence": "Bottle \u0027O\u0027 Soul Essence",
       "item_group.weponsnstuff.wepons_n_stuff": "Wepons \u0027n\u0027 Stuff",
       "item.weponsnstuff.soul_crystle": "Soul Crystle",
       "item.weponsnstuff.mace_head": "Mace Head",

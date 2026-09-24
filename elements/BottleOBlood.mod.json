@@ -12,7 +12,8 @@
     "name": "Bottle 'O' Blood",
     "rarity": "UNCOMMON",
     "creativeTabs": [
-      "CUSTOM:LifeSteal"
+      "CUSTOM:LifeSteal",
+      "MATERIALS"
     ],
     "stackSize": 16,
     "enchantability": 0,
@@ -33,7 +34,7 @@
       "fixedValue": []
     },
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "openGUIOnRightClick": {
       "fixedValue": false

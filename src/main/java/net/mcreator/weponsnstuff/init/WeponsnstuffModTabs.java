@@ -50,6 +50,7 @@ public class WeponsnstuffModTabs {
 			tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(WeponsnstuffModItems.SOUL_ESSENCE.get());
+			tabData.accept(WeponsnstuffModItems.BOTTLE_O_BLOOD.get());
 		}
 	}
 }

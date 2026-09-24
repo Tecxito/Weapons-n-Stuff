@@ -1,5 +1,8 @@
 package net.mcreator.weponsnstuff.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
@@ -19,6 +22,12 @@ public class BottleOBloodItem extends Item {
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.DRINK;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 
 	@Override

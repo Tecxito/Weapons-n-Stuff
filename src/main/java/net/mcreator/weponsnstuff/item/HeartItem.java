@@ -4,6 +4,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -14,7 +15,7 @@ import net.mcreator.weponsnstuff.procedures.Add_HeartProcedure;
 
 public class HeartItem extends Item {
 	public HeartItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant());
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.RARE));
 	}
 
 	@Override
