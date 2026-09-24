@@ -11,14 +11,16 @@
     "animations": [],
     "name": "Bottle 'O' Blood",
     "rarity": "UNCOMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      "CUSTOM:LifeSteal"
+    ],
     "stackSize": 16,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": "",
-    "destroyAnyBlock": false,
+    "destroyAnyBlock": true,
     "immuneToFire": false,
     "isPiglinCurrency": false,
     "repairItems": [],
