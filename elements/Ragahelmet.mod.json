@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ragatest_head",
+    "textureHelmet": "raga_helmet",
     "enableBody": true,
-    "textureBody": "ragatest_body",
+    "textureBody": "raga_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "ragatest_leggings",
+    "textureLeggings": "raga_leggings",
     "enableBoots": true,
-    "textureBoots": "ragatest_boots",
+    "textureBoots": "raga_feets",
     "onHelmetTick": "RagahelmetHelmetTickEvent",
     "onBodyTick": "RagahelmetChestplateTickEvent",
     "onLeggingsTick": "RagahelmetLeggingsTickEvent",
@@ -104,6 +104,19 @@
       "Blocks.CONCRETE#0"
     ],
     "rarity": "COMMON",
-    "attributeModifiers": []
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "head",
+        "attribute": "NAMETAG_RENDER_DISTANCE",
+        "amount": 1000.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          true,
+          false,
+          false,
+          false
+        ]
+      }
+    ]
   }
 }

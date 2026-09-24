@@ -17,7 +17,7 @@ public class MaceoknightfallLivingEntityIsHitWithToolProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double MaceDamage = 0;
-		MaceDamage = 1.5;
+		MaceDamage = 4;
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 75, 3, 3, 3, 1.3);
 		if (world instanceof Level _level) {
