@@ -14,7 +14,7 @@ import net.mcreator.weponsnstuff.procedures.Add_HeartProcedure;
 
 public class HeartItem extends Item {
 	public HeartItem() {
-		super(new Item.Properties().stacksTo(1));
+		super(new Item.Properties().stacksTo(1).fireResistant());
 	}
 
 	@Override

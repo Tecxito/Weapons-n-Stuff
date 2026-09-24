@@ -1,5 +1,6 @@
 package net.mcreator.weponsnstuff.item;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
@@ -18,6 +19,11 @@ public class BottleOBloodItem extends Item {
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.DRINK;
+	}
+
+	@Override
+	public boolean isCorrectToolForDrops(ItemStack itemstack, BlockState state) {
+		return true;
 	}
 
 	@Override

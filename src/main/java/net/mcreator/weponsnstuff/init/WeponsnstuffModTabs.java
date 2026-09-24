@@ -33,6 +33,11 @@ public class WeponsnstuffModTabs {
 				tabData.accept(WeponsnstuffModItems.MACE_BLADE.get());
 				tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
 			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LIFE_STEAL = REGISTRY.register("life_steal",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.weponsnstuff.life_steal")).icon(() -> new ItemStack(WeponsnstuffModItems.HEART.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WeponsnstuffModItems.HEART.get());
+				tabData.accept(WeponsnstuffModItems.BOTTLE_O_BLOOD.get());
+			}).withTabsBefore(WEPONS_N_STUFF.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
