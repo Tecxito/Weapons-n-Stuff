@@ -1,9 +1,0 @@
-{
-  "parent": "weponsnstuff:custom/soul_core",
-  "textures": {
-    "all": "weponsnstuff:block/soul_core_texture",
-    "particle": "minecraft:block/dead_bubble_coral_block",
-    "2": "weponsnstuff:block/soul_core_texture"
-  },
-  "render_type": "solid"
-}

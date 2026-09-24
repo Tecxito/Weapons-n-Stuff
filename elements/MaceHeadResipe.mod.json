@@ -13,13 +13,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
-      "",
+      "CUSTOM:SoulCrystle",
       "",
       "Blocks.LODESTONE",
-      "CUSTOM:SoulCore",
+      "Blocks.HEAVY_CORE",
       "Blocks.LODESTONE",
       "",
-      "",
+      "CUSTOM:SoulCrystle",
       ""
     ],
     "recipeReturnStack": "CUSTOM:MaceHead",

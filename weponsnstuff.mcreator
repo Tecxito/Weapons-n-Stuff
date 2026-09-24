@@ -371,23 +371,6 @@
       "path": "~/Mace Components"
     },
     {
-      "name": "SoulCore",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soul_core",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/weponsnstuff/loot_table/blocks/soul_core.json",
-          "src/main/resources/assets/weponsnstuff/models/item/soul_core.json",
-          "src/main/resources/assets/weponsnstuff/blockstates/soul_core.json",
-          "src/main/resources/assets/weponsnstuff/models/block/soul_core.json",
-          "src/main/java/net/mcreator/weponsnstuff/block/SoulCoreBlock.java"
-        ]
-      },
-      "path": "~/Mace Components"
-    },
-    {
       "name": "MaceOKnightFallResipe",
       "type": "recipe",
       "compiles": true,
@@ -399,12 +382,201 @@
         ]
       },
       "path": "~/Mace Components"
+    },
+    {
+      "name": "SwordOfLifeSteal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_life_steal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/SwordOfLifeStealItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/sword_of_life_steal.json"
+        ]
+      },
+      "path": "~/Sword Components"
+    },
+    {
+      "name": "Heart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/heart.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/HeartItem.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "Add_Heart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_heart",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/Add_HeartProcedure.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "BottleOBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottle_o_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/bottle_o_blood.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/BottleOBloodItem.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "BloodHarvest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_harvest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/BloodHarvestProcedure.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "HeartRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/recipe/brewing/HeartRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "PlayerHeartDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_heart_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/PlayerHeartDropProcedure.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
+    },
+    {
+      "name": "GetSetHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_set_health",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/procedures/GetSetHealthProcedure.java"
+        ]
+      },
+      "path": "~/Life Steal Core"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Total_Health",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    },
+    {
+      "name": "Max_Health",
+      "type": "number",
+      "scope": "map",
+      "value": "40.0"
+    },
+    {
+      "name": "Min_Health",
+      "type": "number",
+      "scope": "map",
+      "value": "4.0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:weponsnstuff:maceoknightfall_repair_items": [],
     "ITEMS:minecraft:head_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
@@ -435,15 +607,17 @@
       "item.weponsnstuff.mace_head": "Mace Head",
       "item.weponsnstuff.weapon_handle": "Weapon Handle",
       "item.weponsnstuff.mace_blade": "Mace Blade",
-      "block.weponsnstuff.soul_core": "Soul Core"
+      "item.weponsnstuff.sword_of_life_steal": "Sword \u0027O\u0027 Life Steal",
+      "item.weponsnstuff.heart": "Heart",
+      "item.weponsnstuff.bottle_o_blood": "Bottle \u0027O\u0027 Blood"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModBlocks.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
@@ -461,6 +635,14 @@
       },
       {
         "name": "Soul Essence Structure",
+        "children": []
+      },
+      {
+        "name": "Sword Components",
+        "children": []
+      },
+      {
+        "name": "Life Steal Core",
         "children": []
       }
     ]

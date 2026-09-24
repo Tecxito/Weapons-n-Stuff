@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba"
+    " a ",
+    "bcb",
+    " a "
   ],
   "key": {
     "a": {
-      "item": "minecraft:lodestone"
+      "item": "weponsnstuff:soul_crystle"
     },
     "b": {
-      "item": "weponsnstuff:soul_core"
+      "item": "minecraft:lodestone"
+    },
+    "c": {
+      "item": "minecraft:heavy_core"
     }
   },
   "result": {

@@ -5,11 +5,8 @@ package net.mcreator.weponsnstuff.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.weponsnstuff.item.*;
 import net.mcreator.weponsnstuff.WeponsnstuffMod;
@@ -26,7 +23,9 @@ public class WeponsnstuffModItems {
 	public static final DeferredItem<Item> MACE_HEAD;
 	public static final DeferredItem<Item> WEAPON_HANDLE;
 	public static final DeferredItem<Item> MACE_BLADE;
-	public static final DeferredItem<Item> SOUL_CORE;
+	public static final DeferredItem<Item> SWORD_OF_LIFE_STEAL;
+	public static final DeferredItem<Item> HEART;
+	public static final DeferredItem<Item> BOTTLE_O_BLOOD;
 	static {
 		MACEOKNIGHTFALL = REGISTRY.register("maceoknightfall", MaceoknightfallItem::new);
 		RAGA_ARMOR_HELMET = REGISTRY.register("raga_armor_helmet", RagahelmetItem.Helmet::new);
@@ -38,16 +37,10 @@ public class WeponsnstuffModItems {
 		MACE_HEAD = REGISTRY.register("mace_head", MaceHeadItem::new);
 		WEAPON_HANDLE = REGISTRY.register("weapon_handle", WeaponHandleItem::new);
 		MACE_BLADE = REGISTRY.register("mace_blade", MaceBladeItem::new);
-		SOUL_CORE = block(WeponsnstuffModBlocks.SOUL_CORE);
+		SWORD_OF_LIFE_STEAL = REGISTRY.register("sword_of_life_steal", SwordOfLifeStealItem::new);
+		HEART = REGISTRY.register("heart", HeartItem::new);
+		BOTTLE_O_BLOOD = REGISTRY.register("bottle_o_blood", BottleOBloodItem::new);
 	}
-
 	// Start of user code block custom items
 	// End of user code block custom items
-	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
-		return block(block, new Item.Properties());
-	}
-
-	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
-	}
 }

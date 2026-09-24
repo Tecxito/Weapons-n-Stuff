@@ -1,0 +1,7 @@
+{
+  "parent": "weponsnstuff:custom/sword_of_lifesteal",
+  "textures": {
+    "1": "weponsnstuff:block/sword_texture",
+    "particle": "weponsnstuff:item/swordv2_2"
+  }
+}

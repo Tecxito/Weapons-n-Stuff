@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": "CUSTOM:BottleOBlood",
+    "brewingIngredientStack": "Items.NETHER_STAR",
+    "brewingReturnStack": "CUSTOM:Heart",
+    "name": "heart_recipe",
+    "namespace": "mod"
+  }
+}

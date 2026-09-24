@@ -31,7 +31,7 @@ public class WeponsnstuffModTabs {
 				tabData.accept(WeponsnstuffModItems.MACE_HEAD.get());
 				tabData.accept(WeponsnstuffModItems.WEAPON_HANDLE.get());
 				tabData.accept(WeponsnstuffModItems.MACE_BLADE.get());
-				tabData.accept(WeponsnstuffModBlocks.SOUL_CORE.get().asItem());
+				tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
 			}).build());
 
 	@SubscribeEvent
@@ -42,6 +42,7 @@ public class WeponsnstuffModTabs {
 			tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_CHESTPLATE.get());
 			tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_LEGGINGS.get());
 			tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_BOOTS.get());
+			tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(WeponsnstuffModItems.SOUL_ESSENCE.get());
 		}
