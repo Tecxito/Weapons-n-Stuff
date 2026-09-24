@@ -391,8 +391,8 @@
       "registry_name": "sword_of_life_steal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/weponsnstuff/item/SwordOfLifeStealItem.java",
-          "src/main/resources/assets/weponsnstuff/models/item/sword_of_life_steal.json"
+          "src/main/resources/assets/weponsnstuff/models/item/sword_of_life_steal.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/SwordOfLifeStealItem.java"
         ]
       },
       "path": "~/Sword Components"
@@ -615,11 +615,11 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java",
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
-      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
-      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
