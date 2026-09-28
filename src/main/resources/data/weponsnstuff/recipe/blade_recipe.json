@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "weponsnstuff:soul_crystle"
+    },
+    "b": {
+      "item": "weponsnstuff:heart"
+    },
+    "c": {
+      "item": "minecraft:lodestone"
+    }
+  },
+  "result": {
+    "id": "weponsnstuff:life_slasher_blade",
+    "count": 1
+  }
+}

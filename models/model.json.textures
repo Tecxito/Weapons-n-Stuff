@@ -3,7 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "2": "soul_core_texture"
+        "missing": "sword_texture"
       }
     }
   }

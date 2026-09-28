@@ -1,5 +1,5 @@
 {
-  "parent": "weponsnstuff:custom/sword_of_lifesteal",
+  "parent": "weponsnstuff:custom/heart_slasher",
   "textures": {
     "1": "weponsnstuff:block/sword_texture",
     "particle": "weponsnstuff:item/swordv2_2"

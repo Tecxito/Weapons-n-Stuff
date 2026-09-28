@@ -1,0 +1,7 @@
+{
+  "parent": "weponsnstuff:custom/model",
+  "textures": {
+    "missing": "weponsnstuff:block/sword_texture",
+    "particle": "weponsnstuff:item/model"
+  }
+}

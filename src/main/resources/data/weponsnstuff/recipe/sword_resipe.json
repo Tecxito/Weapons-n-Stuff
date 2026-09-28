@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "weponsnstuff:weapon_handle"
+  },
+  "base": {
+    "item": "weponsnstuff:bottle_o_blood"
+  },
+  "addition": {
+    "item": "weponsnstuff:life_slasher_blade"
+  },
+  "result": {
+    "id": "weponsnstuff:sword_of_life_steal"
+  }
+}

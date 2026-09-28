@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": "CUSTOM:BottleOBlood",
+    "smithingInputAdditionStack": "CUSTOM:LifeSlasherBlade",
+    "smithingInputTemplateStack": "CUSTOM:WeaponHandle",
+    "smithingReturnStack": "CUSTOM:SwordOfLifeSteal",
+    "name": "sword_resipe",
+    "namespace": "mod"
+  }
+}

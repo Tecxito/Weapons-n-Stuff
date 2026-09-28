@@ -391,8 +391,8 @@
       "registry_name": "sword_of_life_steal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/weponsnstuff/models/item/sword_of_life_steal.json",
-          "src/main/java/net/mcreator/weponsnstuff/item/SwordOfLifeStealItem.java"
+          "src/main/java/net/mcreator/weponsnstuff/item/SwordOfLifeStealItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/sword_of_life_steal.json"
         ]
       },
       "path": "~/Sword Components"
@@ -563,6 +563,46 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "LifeSlasherBlade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_slasher_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/LifeSlasherBladeItem.java",
+          "src/main/resources/assets/weponsnstuff/models/item/life_slasher_blade.json"
+        ]
+      },
+      "path": "~/Sword Components"
+    },
+    {
+      "name": "BladeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blade_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/blade_recipe.json"
+        ]
+      },
+      "path": "~/Sword Components"
+    },
+    {
+      "name": "SwordResipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_resipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/recipe/sword_resipe.json"
+        ]
+      },
+      "path": "~/Sword Components"
     }
   ],
   "variable_elements": [
@@ -617,20 +657,21 @@
       "item.weponsnstuff.mace_head": "Mace Head",
       "item.weponsnstuff.weapon_handle": "Weapon Handle",
       "item.weponsnstuff.mace_blade": "Mace Blade",
-      "item.weponsnstuff.sword_of_life_steal": "Sword \u0027O\u0027 Life Steal",
+      "item.weponsnstuff.sword_of_life_steal": "Heart Slasher",
       "item.weponsnstuff.heart": "Heart",
       "item.weponsnstuff.bottle_o_blood": "Bottle \u0027O\u0027 Blood",
-      "item_group.weponsnstuff.life_steal": "Life Steal"
+      "item_group.weponsnstuff.life_steal": "Life Steal",
+      "item.weponsnstuff.life_slasher_blade": "Life Slasher Blade"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
-      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java",
-      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
+      "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
   },
   "foldersRoot": {
