@@ -696,6 +696,10 @@
       {
         "name": "Life Steal Core",
         "children": []
+      },
+      {
+        "name": "Wand Componets",
+        "children": []
       }
     ]
   },
