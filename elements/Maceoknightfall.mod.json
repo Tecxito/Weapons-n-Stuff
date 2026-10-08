@@ -24,13 +24,13 @@
     "damageVsEntity": 5.0,
     "usageCount": 1000,
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "repairItems": [
       "Items.BREEZE_ROD"
     ],
     "immuneToFire": true,
-    "blockDropsTier": "STONE",
+    "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,

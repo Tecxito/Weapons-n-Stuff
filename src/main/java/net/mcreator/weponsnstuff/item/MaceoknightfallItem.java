@@ -1,8 +1,5 @@
 package net.mcreator.weponsnstuff.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -36,7 +33,7 @@ public class MaceoknightfallItem extends AxeItem {
 
 		@Override
 		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_STONE_TOOL;
+			return BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
 		}
 
 		@Override
@@ -64,13 +61,7 @@ public class MaceoknightfallItem extends AxeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		MaceoknightfallEntitySwingsItemProcedure.execute(entity, ar.getObject());
+		MaceoknightfallEntitySwingsItemProcedure.execute(world, entity, ar.getObject());
 		return ar;
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 }

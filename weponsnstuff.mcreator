@@ -30,7 +30,7 @@
     {
       "name": "Maceoknightfall",
       "type": "tool",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "maceoknightfall",
       "metadata": {
@@ -603,6 +603,20 @@
         ]
       },
       "path": "~/Sword Components"
+    },
+    {
+      "name": "WandoftheEnd",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wandofthe_end",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/weponsnstuff/models/item/wandofthe_end.json",
+          "src/main/java/net/mcreator/weponsnstuff/item/WandoftheEndItem.java"
+        ]
+      },
+      "path": "~/Wand Componets"
     }
   ],
   "variable_elements": [
@@ -627,9 +641,6 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:axes": [
-      "~Maceoknightfall@CUSTOM:Maceoknightfall"
-    ],
     "ITEMS:minecraft:head_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.helmet"
     ],
@@ -641,6 +652,9 @@
     ],
     "ITEMS:minecraft:foot_armor": [
       "~Ragahelmet@CUSTOM:Ragahelmet.boots"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~Maceoknightfall@CUSTOM:Maceoknightfall"
     ]
   },
   "tab_element_order": {},
@@ -661,7 +675,8 @@
       "item.weponsnstuff.heart": "Heart",
       "item.weponsnstuff.bottle_o_blood": "Bottle \u0027O\u0027 Blood",
       "item_group.weponsnstuff.life_steal": "Life Steal",
-      "item.weponsnstuff.life_slasher_blade": "Life Slasher Blade"
+      "item.weponsnstuff.life_slasher_blade": "Life Slasher Blade",
+      "item.weponsnstuff.wandofthe_end": "Wand of the End"
     }
   },
   "metadata": {

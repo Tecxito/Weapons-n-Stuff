@@ -1,0 +1,7 @@
+{
+  "parent": "weponsnstuff:custom/wand_of_the_end",
+  "textures": {
+    "2": "weponsnstuff:block/wand_of_the_end_texture",
+    "particle": "weponsnstuff:item/wand_of_the_end"
+  }
+}

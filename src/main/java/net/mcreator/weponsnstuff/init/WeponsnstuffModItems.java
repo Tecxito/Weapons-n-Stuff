@@ -27,6 +27,7 @@ public class WeponsnstuffModItems {
 	public static final DeferredItem<Item> HEART;
 	public static final DeferredItem<Item> BOTTLE_O_BLOOD;
 	public static final DeferredItem<Item> LIFE_SLASHER_BLADE;
+	public static final DeferredItem<Item> WANDOFTHE_END;
 	static {
 		MACEOKNIGHTFALL = REGISTRY.register("maceoknightfall", MaceoknightfallItem::new);
 		RAGA_ARMOR_HELMET = REGISTRY.register("raga_armor_helmet", RagahelmetItem.Helmet::new);
@@ -42,6 +43,7 @@ public class WeponsnstuffModItems {
 		HEART = REGISTRY.register("heart", HeartItem::new);
 		BOTTLE_O_BLOOD = REGISTRY.register("bottle_o_blood", BottleOBloodItem::new);
 		LIFE_SLASHER_BLADE = REGISTRY.register("life_slasher_blade", LifeSlasherBladeItem::new);
+		WANDOFTHE_END = REGISTRY.register("wandofthe_end", WandoftheEndItem::new);
 	}
 	// Start of user code block custom items
 	// End of user code block custom items

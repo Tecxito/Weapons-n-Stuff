@@ -32,6 +32,7 @@ public class WeponsnstuffModTabs {
 				tabData.accept(WeponsnstuffModItems.WEAPON_HANDLE.get());
 				tabData.accept(WeponsnstuffModItems.MACE_BLADE.get());
 				tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
+				tabData.accept(WeponsnstuffModItems.WANDOFTHE_END.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LIFE_STEAL = REGISTRY.register("life_steal",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.weponsnstuff.life_steal")).icon(() -> new ItemStack(WeponsnstuffModItems.HEART.get())).displayItems((parameters, tabData) -> {
@@ -48,6 +49,7 @@ public class WeponsnstuffModTabs {
 			tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_LEGGINGS.get());
 			tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_BOOTS.get());
 			tabData.accept(WeponsnstuffModItems.SWORD_OF_LIFE_STEAL.get());
+			tabData.accept(WeponsnstuffModItems.WANDOFTHE_END.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(WeponsnstuffModItems.SOUL_ESSENCE.get());
 			tabData.accept(WeponsnstuffModItems.BOTTLE_O_BLOOD.get());
