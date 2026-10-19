@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "weponsnstuff:block/theunderground_portal_ew"
+    },
+    "axis=x": {
+      "model": "weponsnstuff:block/theunderground_portal_ns"
+    }
+  }
+}

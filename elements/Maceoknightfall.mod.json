@@ -30,12 +30,11 @@
       "Items.BREEZE_ROD"
     ],
     "immuneToFire": true,
-    "blockDropsTier": "DIAMOND",
+    "blockDropsTier": "STONE",
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": "MaceoknightfallEntitySwingsItem",
     "onEntityHitWith": "MaceoknightfallLivingEntityIsHitWithTool"
   }
 }

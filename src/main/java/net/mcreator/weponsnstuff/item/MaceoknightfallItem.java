@@ -1,18 +1,13 @@
 package net.mcreator.weponsnstuff.item;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.*;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
 import net.mcreator.weponsnstuff.procedures.MaceoknightfallLivingEntityIsHitWithToolProcedure;
-import net.mcreator.weponsnstuff.procedures.MaceoknightfallEntitySwingsItemProcedure;
 
 public class MaceoknightfallItem extends AxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -33,7 +28,7 @@ public class MaceoknightfallItem extends AxeItem {
 
 		@Override
 		public TagKey<Block> getIncorrectBlocksForDrops() {
-			return BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
+			return BlockTags.INCORRECT_FOR_STONE_TOOL;
 		}
 
 		@Override
@@ -56,12 +51,5 @@ public class MaceoknightfallItem extends AxeItem {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
 		MaceoknightfallLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
 		return retval;
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		MaceoknightfallEntitySwingsItemProcedure.execute(world, entity, ar.getObject());
-		return ar;
 	}
 }

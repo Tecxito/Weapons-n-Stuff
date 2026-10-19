@@ -28,6 +28,7 @@ public class WeponsnstuffModTabs {
 				tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_LEGGINGS.get());
 				tabData.accept(WeponsnstuffModItems.RAGA_ARMOR_BOOTS.get());
 				tabData.accept(WeponsnstuffModItems.SOUL_ESSENCE.get());
+				tabData.accept(WeponsnstuffModItems.SOUL_CRYSTLE.get());
 				tabData.accept(WeponsnstuffModItems.MACE_HEAD.get());
 				tabData.accept(WeponsnstuffModItems.WEAPON_HANDLE.get());
 				tabData.accept(WeponsnstuffModItems.MACE_BLADE.get());
@@ -52,7 +53,10 @@ public class WeponsnstuffModTabs {
 			tabData.accept(WeponsnstuffModItems.WANDOFTHE_END.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(WeponsnstuffModItems.SOUL_ESSENCE.get());
+			tabData.accept(WeponsnstuffModItems.SOUL_CRYSTLE.get());
 			tabData.accept(WeponsnstuffModItems.BOTTLE_O_BLOOD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(WeponsnstuffModItems.THEUNDERGROUND.get());
 		}
 	}
 }

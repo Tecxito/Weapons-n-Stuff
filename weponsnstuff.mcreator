@@ -30,7 +30,7 @@
     {
       "name": "Maceoknightfall",
       "type": "tool",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "maceoknightfall",
       "metadata": {
@@ -617,6 +617,45 @@
         ]
       },
       "path": "~/Wand Componets"
+    },
+    {
+      "name": "Harshcaves",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "harshcaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/weponsnstuff/worldgen/configured_feature/harshcaves_tree.json",
+          "src/main/java/net/mcreator/weponsnstuff/mixin/BiomeSourcePresetMixin.java",
+          "src/main/resources/data/weponsnstuff/worldgen/biome/harshcaves.json",
+          "src/main/resources/data/weponsnstuff/worldgen/placed_feature/harshcaves_tree.json"
+        ]
+      },
+      "path": "~/The_Underground"
+    },
+    {
+      "name": "Theunderground",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theunderground",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/weponsnstuff/item/TheundergroundItem.java",
+          "src/main/java/net/mcreator/weponsnstuff/block/TheundergroundPortalBlock.java",
+          "src/main/resources/data/weponsnstuff/dimension_type/theunderground.json",
+          "src/main/resources/data/weponsnstuff/dimension/theunderground.json",
+          "src/main/java/net/mcreator/weponsnstuff/world/teleporter/TheundergroundTeleporter.java",
+          "src/main/resources/assets/weponsnstuff/models/block/theunderground_portal_ew.json",
+          "src/main/resources/assets/weponsnstuff/models/block/theunderground_portal_ns.json",
+          "src/main/resources/assets/weponsnstuff/blockstates/theunderground_portal.json",
+          "src/main/java/net/mcreator/weponsnstuff/world/dimension/TheundergroundDimension.java",
+          "src/main/resources/assets/weponsnstuff/models/item/theunderground.json",
+          "src/main/java/net/mcreator/weponsnstuff/world/teleporter/TheundergroundPortalShape.java"
+        ]
+      },
+      "path": "~/The_Underground"
     }
   ],
   "variable_elements": [
@@ -655,6 +694,10 @@
     ],
     "ITEMS:minecraft:axes": [
       "~Maceoknightfall@CUSTOM:Maceoknightfall"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Theunderground@Blocks.BLACKSTONE",
+      "~Theunderground@Blocks.DEEPSLATE"
     ]
   },
   "tab_element_order": {},
@@ -676,15 +719,22 @@
       "item.weponsnstuff.bottle_o_blood": "Bottle \u0027O\u0027 Blood",
       "item_group.weponsnstuff.life_steal": "Life Steal",
       "item.weponsnstuff.life_slasher_blade": "Life Slasher Blade",
-      "item.weponsnstuff.wandofthe_end": "Wand of the End"
+      "item.weponsnstuff.wandofthe_end": "Wand of the End",
+      "biome.weponsnstuff.harshcaves": "Harsh Caves",
+      "item.weponsnstuff.theunderground": "Theunderground Portal Igniter"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/weponsnstuff/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModBiomes.java",
+      "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModBlocks.java",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/weponsnstuff/network/WeponsnstuffModVariables.java",
+      "src/main/resources/weponsnstuff.mixins.json",
       "src/main/java/net/mcreator/weponsnstuff/init/WeponsnstuffModTabs.java",
       "src/main/java/net/mcreator/weponsnstuff/WeponsnstuffMod.java"
     ]
@@ -714,6 +764,10 @@
       },
       {
         "name": "Wand Componets",
+        "children": []
+      },
+      {
+        "name": "The_Underground",
         "children": []
       }
     ]
